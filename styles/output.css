@@ -73,7 +73,22 @@ body {
 2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
 3. Ensure horizontal rules are visible by default.
 */
+::-webkit-scrollbar {
+  width: 12px; 
+  height: 10px; 
+}
 
+::-webkit-scrollbar-track {
+  background: transparent; 
+  border-radius: 10px; 
+}
+
+
+::-webkit-scrollbar-thumb {
+  background-color: #ef4444; 
+  border-radius: 10px; 
+  border: 2px solid black; 
+}
 hr {
   height: 0;
   /* 1 */
@@ -1968,7 +1983,7 @@ video {
 }
 
 .bg-home {
-  background-image: url('./assets/bg.png');
+  background-image: url('/assets/bg.png');
 }
 
 .decoration-slice {
